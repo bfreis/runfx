@@ -1,0 +1,24 @@
+---
+run:
+  modules-download-mode: readonly
+  go: '1.20'
+
+linters:
+  enable-all: true
+
+  # Disable specific linter
+  # https://golangci-lint.run/usage/linters/#disabled-by-default
+  disable:
+    - copyloopvar # disabled before Go 1.22
+    - intrange # disabled before Go 1.22
+
+    - deadcode # Deprecated
+    - exhaustivestruct # Deprecated
+    - golint # Deprecated
+    - ifshort # Deprecated
+    - interfacer # Deprecated
+    - maligned # Deprecated
+    - nosnakecase # Deprecated
+    - scopelint # Deprecated
+    - structcheck # Deprecated
+    - varcheck # Deprecated
